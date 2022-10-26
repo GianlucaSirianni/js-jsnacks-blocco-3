@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rand</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h3>Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+        Continua a chiedere i numeri all’utente e a inserirli nell’array fino a quando la somma degli elementi è minore
+        di 50.</h3>
+
+    <button class="submitButton" onclick="fiftyElements(); return false">Generate</button>
+    <br><br>
+
+    <h3>Il software deve chiedere per 5 volte all’utente di inserire un numero.
+        Il programma stampa la somma di tutti i numeri inseriti.</h3>
+
+    <button class="submitButton" onclick="sumOfFive(); return false">Generate</button>
+    <h5 id="sumOfFiveNums"></h5>
+    <br><br>
+
+    <h3>Fai inserire un numero, che chiameremo N, all’utente.
+        Genera N array,
+        ognuno formato da 10 numeri casuali da 1 a 100.
+        Ogni volta che ne crei uno, stampalo.</h3>
+    
+    <label for="numberOfArrays">How many arrays do you want?</label>
+    <input type="text" id="numberOfArrays">
+    <button class="submitButton" onclick="howManyArr(); return false">Generate</button>
+    <ul id="numOfArr"></ul>
+    <br><br>
+
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
