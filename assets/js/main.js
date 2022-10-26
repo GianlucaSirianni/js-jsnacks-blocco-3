@@ -36,25 +36,40 @@ function sumOfFive(){
 
 function howManyArr(){
     let n = parseInt(document.getElementById('numberOfArrays').value);
+    
     for (i=0; i<n; i++){
-        var newArray = new Array();
+        let newArray = new Array();
         
-        for (i=0; i<10; i++){
+        for (x=0; x<10; x++){
+            
             newArray.push(Math.round(Math.random() * 100));
             
             
         }
-        
+        document.getElementById("numOfArr").innerHTML += `<li>${newArray}</li>`;
     }
-    document.getElementById("numOfArr").innerHTML += `<li>${newArray}</li>`;
+    
 }
 
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 //Interrompi il ciclo appena il nome è stato trovato.
 
 
-list = ['Francesco', 'Francesca', 'Andrea','Emma']
+
+
+
 function inTheList(){
-    let name = document.getElementById('numberOfArrays').value;
-    
+    guestList = ['Francesco', 'Francesca', 'Andrea','Emma'];
+    let userName = document.getElementById('userName').value;
+    i = 0
+    while (i<guestList.length){
+        if (userName == guestList[i]){
+            document.getElementById("canYouComeIn").innerHTML = "Prego da questa parte";
+            break;
+        } else {
+            document.getElementById("canYouComeIn").innerHTML = "Se ne vada";
+        }
+        i++
+    }
 }
+
