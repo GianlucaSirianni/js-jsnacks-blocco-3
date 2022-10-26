@@ -35,15 +35,26 @@ function sumOfFive(){
 //Ogni volta che ne crei uno, stampalo.
 
 function howManyArr(){
-    let numOfArrays = parseInt(document.getElementById('numberOfArrays').value);
-    for (i=0; i<numOfArrays; i++){
+    let n = parseInt(document.getElementById('numberOfArrays').value);
+    for (i=0; i<n; i++){
         var newArray = new Array();
+        
         for (i=0; i<10; i++){
             newArray.push(Math.round(Math.random() * 100));
+            
+            
         }
+        
     }
     document.getElementById("numOfArr").innerHTML += `<li>${newArray}</li>`;
 }
 
 //In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 //Interrompi il ciclo appena il nome è stato trovato.
+
+
+list = ['Francesco', 'Francesca', 'Andrea','Emma']
+function inTheList(){
+    let name = document.getElementById('numberOfArrays').value;
+    
+}
